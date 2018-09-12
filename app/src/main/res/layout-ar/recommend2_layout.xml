@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/poor_sup"
+    android:visibility="gone"
+    android:background="@drawable/feedbackbg"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/disast_coordinatorLayout"
+        android:background="@drawable/feedbackbg"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:orientation="vertical"
+
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1"
+
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/disast_back"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:backgroundTint="@color/colorAccent"
+
+                    android:padding="@dimen/_15sdp"
+
+                    android:background="@drawable/ic_arrow_back_white_24dp"
+
+
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/logo"/>
+
+
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_departmnt3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight=".4">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+               >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+
+                    android:text="@string/if_disatisfied"
+                    android:textColor="#083087"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/popup_autoCompleteTextView"
+                        android:layout_width="@dimen/_200sdp"
+
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+
+android:gravity="start"
+                        android:paddingLeft="@dimen/_12sdp"
+                        android:textSize="@dimen/_11sdp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/send_deprt"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+
+                        android:background="@drawable/ic_send_black_24dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <!--  android:backgroundTint="@android:color/holo_green_light"-->
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight=".2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                android:text="@string/would_you_recommend"
+                android:textColor="#083087"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight=".2"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:id="@+id/radio_recommends_d"
+                    android:layout_height="@dimen/_50sdp">
+
+                    <RadioButton
+                        android:text="@string/yes"
+                        android:buttonTint="#75bb13"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:checked="true"
+
+                        android:layout_marginRight="@dimen/_1sdp"
+                        android:id="@+id/radio_checked_yess_d"  />
+
+                    <RadioButton
+                        android:text="@string/no"
+                        android:buttonTint="#75bb13"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_1sdp"
+                        android:id="@+id/radio_checked_noo_d" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight=".7"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:id="@+id/lay_suggestions"
+
+                        android:layout_weight="9"
+                     >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="@string/suggestions_if"
+                            android:textColor="#083087"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/popup_edt_suggestins_d"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/bigbox"
+                            android:gravity="top|right"
+                            android:padding="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_12sdp"
+                            android:singleLine="false"
+                            android:lines="5"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:textSize="@dimen/_12sdp"
+
+                            android:layout_height="@dimen/_80sdp"
+                            />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_weight="1.96">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:visibility="visible"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_gravity="center"
+                            android:id="@+id/popup_submit_feedback_d"
+                            android:background="@drawable/proceedbox"
+                            android:textColor="@android:color/white"
+                            android:text="@string/submit_feedback"/>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+    </LinearLayout>
+    <ProgressBar android:id="@+id/popup_progress_bar_questions_d"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        android:layout_centerInParent="true" />
+</RelativeLayout>

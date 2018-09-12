@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="@dimen/_90sdp"
+
+   >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/coun_selct"
+                    android:scaleType="fitXY"
+
+                    android:id="@+id/imageview3"   />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="count"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:id="@+id/count"   />
+                        <View
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:background="@color/dot_dark_screen1"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:layout_height="match_parent"></View>
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="left|center"
+            android:gravity="left|center"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/on_type"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inpatient Reviewed"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+
+                    android:textColor="@color/colorAccent"
+                    />
+                <TextView
+                    android:id="@+id/on_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12-03-16"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_11sdp"
+
+                    android:textColor="@android:color/darker_gray"
+                    />
+        </LinearLayout>
+</LinearLayout>
+
+    <!--   <com.tuyenmonkey.mkloader.MKLoader
+           android:id="@+id/progress_loader"
+           android:layout_width="@dimen/_25sdp"
+           android:layout_height="@dimen/_25sdp"
+           android:layout_centerInParent="true"
+           android:layout_gravity="center"
+           android:visibility="gone"
+           app:mk_color="@color/colorAccent"
+           app:mk_type="FivePulse" />-->
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">زليخة فيدباك</string>
+    <string name="ok">حسنا</string>
+    <string name="yes">نعم فعلا</string>
+    <string name="no">لا</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="success">نجاح</string>
+    <string name="back_to_home">العودة إلى المنزل</string>
+    <string name="excellent">ممتاز</string>
+    <string name="good">جيد</string>
+    <string name="poor">فقير</string>
+    <string name="unavailed">غير متوفرة</string>
+    <string name="if_disatisfied">في حال عدم رضاك، يرجى ذكر اسم القسم</string>
+    <string name="suggestions_if">الاقتراحات، إن وجد‎</string>
+    <string name="submit_feedback">إرسال تعليقات</string>
+    <string name="overall_satisfaction">الرضا العام عن خدمات المستشفى؟</string>
+    <string name="would_you_recommend">هل توصي بزيارة المستشفى لأحد؟</string>
+    <string name="please_mention_your">يرجى ذكر اسم القسم غير راض</string>
+    <string name="no_internet">لا يوجد اتصال بالإنترنت!</string>
+    <string name="please_login_to">الرجاء تسجيل الدخول لإرسال تعليقاتك.</string>
+    <string name="department_name_you_have">اسم القسم الذي حددته هو</string>
+    <string name="thank_you">شكرا لكم</string>
+    <string name="we_appreaciate">نحن نقدر ملاحظاتك.</string>
+    <string name="exit_or_continue">ىخرج / إستمر</string>
+    <string name="do_you_want_to_continue">هل تريد المتابعة مع التعليقات؟</string>
+
+    <string name="vgood">جيد جدا</string>
+    <string name="fair">معرض</string>
+</resources>

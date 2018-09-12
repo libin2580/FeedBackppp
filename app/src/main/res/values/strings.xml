@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Zulekha FeedBack</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+    <array name="array_dot_active_new">
+        <item>@color/dot_active</item>
+        <item>@color/dot_active</item>
+        <item>@color/dot_active</item>
+        <item>@color/dot_active</item>
+    </array>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+    <array name="array_dot_inactive_new">
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+    </array>
+    <string name="success">SUCCESS</string>
+    <string name="back_to_home">Back to home</string>
+    <string name="excellent">Excellent</string>
+    <string name="good">Good</string>
+    <string name="poor">Poor</string>
+    <string name="unavailed">Unavailed</string>
+    <string name="if_disatisfied">If dissatisfied please mention the department name?</string>
+    <string name="suggestions_if">Suggestions if any?</string>
+    <string name="submit_feedback">SUBMIT FEEDBACK</string>
+    <string name="overall_satisfaction">Overall satisfaction of the hospital services?</string>
+    <string name="would_you_recommend">Would you recommend this hospital to others?</string>
+    <string name="please_mention_your">Please mention your disatisfied Department name</string>
+    <string name="no_internet">No internet Connection!</string>
+    <string name="please_login_to">Please login to submit your feedback.</string>
+    <string name="department_name_you_have">Department name you have selected is</string>
+    <string name="thank_you">Thank you</string>
+    <string name="we_appreaciate">we appreciate your feedback.</string>
+    <string name="exit_or_continue">EXIT/CONTINUE</string>
+    <string name="do_you_want_to_continue">Do you want to Continue with feedback?</string>
+    <string name="pin_missing">PIN entered is not an admitted patient, please enter required information manually</string>
+    <string name="vgood">Very Good</string>
+    <string name="fair">Fair</string>
+</resources>

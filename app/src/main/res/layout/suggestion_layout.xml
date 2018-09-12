@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/coordinatorLayout"
+    android:background="@drawable/feedbackbg"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:id="@+id/activity_questions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:orientation="vertical"
+
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="4"
+
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/sug_back"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:backgroundTint="@color/colorAccent"
+
+                android:padding="@dimen/_15sdp"
+
+                android:background="@drawable/ic_arrow_back_white_24dp"
+
+
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_182sdp"
+                android:layout_height="@dimen/_126sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_gravity="center"
+
+                android:background="@drawable/logo"/>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_recommend"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:id="@+id/lay_suggestions"
+
+                android:layout_weight="9"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="@string/suggestions_if"
+                    android:textColor="#083087"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edt_suggestins"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/bigbox"
+                    android:gravity="top|left"
+                    android:padding="@dimen/_5sdp"
+                    android:singleLine="false"
+                    android:lines="5"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp"
+
+                    android:layout_height="@dimen/_100sdp"
+                    android:imeOptions="actionDone" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+
+android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_weight="1.96">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:visibility="visible"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_gravity="center"
+                    android:id="@+id/popup_submit_feedback"
+                    android:background="@drawable/proceedbox"
+                    android:textColor="@android:color/white"
+                    android:text="@string/submit_feedback"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+<ProgressBar android:id="@+id/popup_progress_bar_questions"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:visibility="gone"
+
+android:layout_centerInParent="true" />
+    </RelativeLayout>

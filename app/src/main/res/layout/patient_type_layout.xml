@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/feedbackbg">
+
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_below="@+id/progress_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_30sdp"
+            android:gravity="bottom"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:layout_weight="3">
+            <ImageButton
+                android:id="@+id/close"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_25sdp"
+
+                android:padding="@dimen/_15sdp"
+
+                android:background="@drawable/logout"
+
+
+                />
+            <ImageView
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/logo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="top"
+
+            android:orientation="vertical"
+            android:layout_weight="0.34">
+            <Button
+                android:id="@+id/inpatient"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/proceedbox"
+                android:text="Inpatient"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12sdp"
+
+                android:layout_height="@dimen/_35sdp">
+
+            </Button>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="invisible"-->
+            <!--android:id="@+id/textView2" />-->
+            <Button
+                android:id="@+id/outpatient"
+
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/colorAccent"
+android:text="Outpatient"
+                android:textSize="@dimen/_12sdp"
+
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_height="@dimen/_35sdp">
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+
+            android:layout_weight="2.69">
+
+            <LinearLayout
+                android:id="@+id/slider_lay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:visibility="gone"
+                android:layout_margin="@dimen/_11sdp"
+                android:orientation="vertical"
+              >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corners_click"
+
+                    android:layout_height="match_parent" />
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="match_parent" />
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_slider"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutDots"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"></LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ProgressBar android:id="@+id/progress_bar_login_page"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        android:layout_centerInParent="true" />
+</RelativeLayout>
